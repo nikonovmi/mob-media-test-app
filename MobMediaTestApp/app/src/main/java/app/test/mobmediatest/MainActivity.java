@@ -87,6 +87,12 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    protected void onDestroy() {
+        mWebView.destroy();
+        super.onDestroy();
+    }
+
+    @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putSerializable(SAVED_STATE_KEY, mCurrentState);
         super.onSaveInstanceState(outState);
