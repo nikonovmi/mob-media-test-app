@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/nav_header_padding_bottom"
+    android:paddingTop="@dimen/nav_header_padding_top"
+    android:text="@string/nav_header_text"
+    android:textSize="@dimen/nav_header_text_size"
+    android:textStyle="bold" />

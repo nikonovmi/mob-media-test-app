@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MobMediaTest</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_main_screen">Home</string>
+    <string name="nav_game_1">Game 1</string>
+    <string name="nav_game_2">Game 2</string>
+    <string name="nav_header_text">Mobile Media test application</string>
+</resources>
