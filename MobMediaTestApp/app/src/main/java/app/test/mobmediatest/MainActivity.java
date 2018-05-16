@@ -131,9 +131,14 @@ public class MainActivity extends AppCompatActivity
             if (URLUtil.isNetworkUrl(url)) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 getApplicationContext().startActivity(intent);
+                return true;
+            } else {
+                if (url.equals("star://do") || url.equals("openleaderboard://do") ||
+                        url.startsWith("savescore://")) {
+                    return true; // unsupported urls, just ignore them
+                }
             }
-            return true;
-            // not network urls are ignored
+            return false;
         }
     }
 }
